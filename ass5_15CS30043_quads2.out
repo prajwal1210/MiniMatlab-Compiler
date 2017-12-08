@@ -1,0 +1,191 @@
+0000 : printInt:
+0001 : readInt:
+0002 : printStr:
+0003 : readFlt:
+0004 : printFlt:
+0005 : fact:
+0006 : t0 = 1
+0007 : if a==t0 goto 10
+0008 : goto 13
+0009 : goto 20
+0010 : t1 = 1
+0011 : return t1
+0012 : goto 20
+0013 : t2 = 1
+0014 : t3 = a-t2
+0015 : param t3
+0016 : t4 = call fact,1
+0017 : t5 = a*t4
+0018 : return t5
+0019 : goto 20
+0020 : sum:
+0021 : t6 = a+b
+0022 : c = t6
+0023 : return c
+0024 : sumchar:
+0025 : t7 = a+b
+0026 : c = t7
+0027 : return c
+0028 : main:
+0029 : param .msg0
+0030 : t8 = call printStr,1
+0031 : i = t8
+0032 : t9 = &addr(m)
+0033 : param t9
+0034 : t10 = call readInt,1
+0035 : i = t10
+0036 : param .msg1
+0037 : t11 = call printStr,1
+0038 : i = t11
+0039 : t12 = &addr(n)
+0040 : param t12
+0041 : t13 = call readInt,1
+0042 : i = t13
+0043 : param n
+0044 : param m
+0045 : t14 = call sum,2
+0046 : c = t14
+0047 : param .msg2
+0048 : t15 = call printStr,1
+0049 : i = t15
+0050 : param c
+0051 : t16 = call printInt,1
+0052 : i = t16
+0053 : param .msg3
+0054 : t17 = call printStr,1
+0055 : i = t17
+0056 : param .msg4
+0057 : t18 = call printStr,1
+0058 : i = t18
+0059 : t19 = m-n
+0060 : c = t19
+0061 : param c
+0062 : t20 = call printInt,1
+0063 : i = t20
+0064 : param .msg3
+0065 : t21 = call printStr,1
+0066 : i = t21
+0067 : param .msg5
+0068 : t22 = call printStr,1
+0069 : i = t22
+0070 : t23 = m*n
+0071 : c = t23
+0072 : param c
+0073 : t24 = call printInt,1
+0074 : i = t24
+0075 : param .msg3
+0076 : t25 = call printStr,1
+0077 : i = t25
+0078 : param .msg6
+0079 : t26 = call printStr,1
+0080 : i = t26
+0081 : t27 = m/n
+0082 : c = t27
+0083 : param c
+0084 : t28 = call printInt,1
+0085 : i = t28
+0086 : param .msg3
+0087 : t29 = call printStr,1
+0088 : i = t29
+0089 : param .msg7
+0090 : t30 = call printStr,1
+0091 : i = t30
+0092 : t31 = m%n
+0093 : c = t31
+0094 : param c
+0095 : t32 = call printInt,1
+0096 : i = t32
+0097 : param .msg3
+0098 : t33 = call printStr,1
+0099 : i = t33
+0100 : param .msg8
+0101 : t34 = call printStr,1
+0102 : i = t34
+0103 : param m
+0104 : t35 = call fact,1
+0105 : c = t35
+0106 : param c
+0107 : t36 = call printInt,1
+0108 : i = t36
+0109 : param .msg3
+0110 : t37 = call printStr,1
+0111 : i = t37
+0112 : param .msg9
+0113 : t38 = call printStr,1
+0114 : i = t38
+0115 : param n
+0116 : t39 = call fact,1
+0117 : c = t39
+0118 : param c
+0119 : t40 = call printInt,1
+0120 : i = t40
+0121 : param .msg3
+0122 : t41 = call printStr,1
+0123 : i = t41
+0124 : t42 = a
+0125 : schar2 = t42
+0126 : t43 = b
+0127 : schar3 = t43
+0128 : param schar2
+0129 : param schar3
+0130 : t44 = call sumchar,2
+0131 : schar = t44
+0132 : param .msg10
+0133 : t45 = call printStr,1
+0134 : i = t45
+0135 : t46 = &addr(x)
+0136 : param t46
+0137 : t47 = call readFlt,1
+0138 : i = t47
+0139 : param .msg11
+0140 : t48 = call printStr,1
+0141 : i = t48
+0142 : t49 = &addr(y)
+0143 : param t49
+0144 : t50 = call readFlt,1
+0145 : i = t50
+0146 : param .msg12
+0147 : t51 = call printStr,1
+0148 : i = t51
+0149 : t52 = x+y
+0150 : z = t52
+0151 : param z
+0152 : t53 = call printFlt,1
+0153 : i = t53
+0154 : param .msg3
+0155 : t54 = call printStr,1
+0156 : i = t54
+0157 : param .msg13
+0158 : t55 = call printStr,1
+0159 : i = t55
+0160 : t56 = x-y
+0161 : z = t56
+0162 : param z
+0163 : t57 = call printFlt,1
+0164 : i = t57
+0165 : param .msg3
+0166 : t58 = call printStr,1
+0167 : i = t58
+0168 : param .msg14
+0169 : t59 = call printStr,1
+0170 : i = t59
+0171 : t60 = x*y
+0172 : z = t60
+0173 : param z
+0174 : t61 = call printFlt,1
+0175 : i = t61
+0176 : param .msg3
+0177 : t62 = call printStr,1
+0178 : i = t62
+0179 : param .msg15
+0180 : t63 = call printStr,1
+0181 : i = t63
+0182 : t64 = x/y
+0183 : z = t64
+0184 : param z
+0185 : t65 = call printFlt,1
+0186 : i = t65
+0187 : param .msg3
+0188 : t66 = call printStr,1
+0189 : i = t66
+0190 : return 

@@ -1,0 +1,118 @@
+0000 : printInt:
+0001 : readInt:
+0002 : printStr:
+0003 : assign:
+0004 : return p
+0005 : main:
+0006 : param .msg0
+0007 : t0 = call printStr,1
+0008 : i = t0
+0009 : t1 = &addr(a)
+0010 : param t1
+0011 : t2 = call readInt,1
+0012 : i = t2
+0013 : param .msg1
+0014 : t3 = call printStr,1
+0015 : i = t3
+0016 : t4 = &addr(a)
+0017 : param t4
+0018 : t5 = call assign,1
+0019 : b = t5
+0020 : param .msg2
+0021 : t6 = call printStr,1
+0022 : i = t6
+0023 : t7 = *(b)
+0024 : t8 = t7+a
+0025 : a = t8
+0026 : param a
+0027 : t9 = call printInt,1
+0028 : i = t9
+0029 : param .msg3
+0030 : t10 = call printStr,1
+0031 : i = t10
+0032 : param .msg4
+0033 : t11 = call printStr,1
+0034 : i = t11
+0035 : t12 = *(b)
+0036 : t13 = t12*a
+0037 : a = t13
+0038 : param a
+0039 : t14 = call printInt,1
+0040 : i = t14
+0041 : param .msg3
+0042 : t15 = call printStr,1
+0043 : i = t15
+0044 : param .msg5
+0045 : t16 = call printStr,1
+0046 : i = t16
+0047 : t17 = *(b)
+0048 : t18 = t17/a
+0049 : a = t18
+0050 : param a
+0051 : t19 = call printInt,1
+0052 : i = t19
+0053 : param .msg3
+0054 : t20 = call printStr,1
+0055 : i = t20
+0056 : param .msg6
+0057 : t21 = call printStr,1
+0058 : i = t21
+0059 : t22 = *(b)
+0060 : t23 = t22%a
+0061 : a = t23
+0062 : param a
+0063 : t24 = call printInt,1
+0064 : i = t24
+0065 : param .msg3
+0066 : t25 = call printStr,1
+0067 : i = t25
+0068 : param .msg7
+0069 : t26 = call printStr,1
+0070 : i = t26
+0071 : t27 = a
+0072 : a = a+1
+0073 : t28 = *(b)
+0074 : param t28
+0075 : t29 = call printInt,1
+0076 : i = t29
+0077 : param .msg3
+0078 : t30 = call printStr,1
+0079 : i = t30
+0080 : param .msg8
+0081 : t31 = call printStr,1
+0082 : i = t31
+0083 : a = a+1
+0084 : t32 = a
+0085 : t33 = *(b)
+0086 : param t33
+0087 : t34 = call printInt,1
+0088 : i = t34
+0089 : param .msg3
+0090 : t35 = call printStr,1
+0091 : i = t35
+0092 : param .msg9
+0093 : t36 = call printStr,1
+0094 : i = t36
+0095 : t37 = a
+0096 : a = a-1
+0097 : t38 = *(b)
+0098 : param t38
+0099 : t39 = call printInt,1
+0100 : i = t39
+0101 : param .msg3
+0102 : t40 = call printStr,1
+0103 : i = t40
+0104 : param .msg10
+0105 : t41 = call printStr,1
+0106 : i = t41
+0107 : a = a-1
+0108 : t42 = a
+0109 : t43 = *(b)
+0110 : param t43
+0111 : t44 = call printInt,1
+0112 : i = t44
+0113 : param .msg3
+0114 : t45 = call printStr,1
+0115 : i = t45
+0116 : t46 = 1
+0117 : return t46

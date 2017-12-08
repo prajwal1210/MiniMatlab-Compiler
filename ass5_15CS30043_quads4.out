@@ -1,0 +1,59 @@
+0000 : printInt:
+0001 : readInt:
+0002 : printStr:
+0003 : main:
+0004 : t0 = 0
+0005 : reverse = t0
+0006 : param .msg0
+0007 : t1 = call printStr,1
+0008 : i = t1
+0009 : t2 = &addr(num)
+0010 : param t2
+0011 : t3 = call readInt,1
+0012 : i = t3
+0013 : temp = num
+0014 : t4 = 0
+0015 : if temp>t4 goto 18
+0016 : goto 29
+0017 : goto 29
+0018 : t5 = 10
+0019 : t6 = temp%t5
+0020 : remainder = t6
+0021 : t7 = 10
+0022 : t8 = reverse*t7
+0023 : t9 = t8+remainder
+0024 : reverse = t9
+0025 : t10 = 10
+0026 : t11 = temp/t10
+0027 : temp = t11
+0028 : goto 14
+0029 : param .msg1
+0030 : t12 = call printStr,1
+0031 : i = t12
+0032 : param num
+0033 : t13 = call printInt,1
+0034 : i = t13
+0035 : param .msg2
+0036 : t14 = call printStr,1
+0037 : i = t14
+0038 : param .msg3
+0039 : t15 = call printStr,1
+0040 : i = t15
+0041 : param reverse
+0042 : t16 = call printInt,1
+0043 : i = t16
+0044 : param .msg2
+0045 : t17 = call printStr,1
+0046 : i = t17
+0047 : if num==reverse goto 50
+0048 : goto 54
+0049 : goto 58
+0050 : param .msg4
+0051 : t18 = call printStr,1
+0052 : i = t18
+0053 : goto 58
+0054 : param .msg5
+0055 : t19 = call printStr,1
+0056 : i = t19
+0057 : goto 58
+0058 : return 
